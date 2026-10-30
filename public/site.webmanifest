@@ -1,0 +1,8 @@
+{
+  "name": "PRO ASSURANCE GABON",
+  "short_name": "PRO ASSURANCE",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#102c46"
+}

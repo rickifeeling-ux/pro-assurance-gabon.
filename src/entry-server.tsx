@@ -1,0 +1,2 @@
+import React from"react";import{renderToString}from"react-dom/server";import{StaticRouter}from"react-router-dom/server";import{HelmetProvider}from"react-helmet-async";import{App}from"./App";import"./styles.css";
+export function render(url:string){const context:any={};const html=renderToString(<HelmetProvider context={context}><StaticRouter location={url}><App/></StaticRouter></HelmetProvider>);const h=context.helmet;return{html,helmet:{title:h?.title?.toString()||"",meta:h?.meta?.toString()||"",link:h?.link?.toString()||"",script:h?.script?.toString()||""}}}
